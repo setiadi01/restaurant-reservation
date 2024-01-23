@@ -16,7 +16,9 @@ How to run the app on your local:
 5. Run `php artisan key:generate`
 6. Run `php artisan migrate`
 7. Run `php artisan db:seed`
-8. Run `php artisan serve` to run the app
+8. Run `npm install`
+9. Run `php artisan serve` to run the app
+10. Run the Vite development server  `npm run dev`
 
 ## Login staff
 
