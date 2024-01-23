@@ -5,6 +5,18 @@
 - Automated Table Selection: The system dynamically assigns tables based on availability, optimizing seating arrangements for an efficient use of restaurant space.
 - Timeslot Booking: Customers can book reservations during available timeslots, ensuring a balanced distribution of guests throughout the dining hours.
 
+## Challenges
+
+1. Dynamic Table Assignment Challenge
+
+- Challenge: Optimizing seating arrangements based on table availability posed a challenge. This required balancing customer reservation time preferences and the restaurant's table capacity.
+- Solution: Implemented an approach to dynamically assign tables. Considered factors such as the number of tables and customer reservation time preferences.
+
+2. Handling Simultaneous Reservations
+
+- Challenge: Simultaneous reservation requests for the same timeslot and table.
+- Solution: Implemented Laravel's atomic lock to manage concurrency during reservation creation. This ensures that only one user can successfully book the reservation at a time, preventing conflicts and maintaining data consistency.
+
 ## Development Setup
 
 How to run the app on your local:
@@ -23,7 +35,7 @@ How to run the app on your local:
 ## Login staff
 
 - url: http://localhost:8000/login
-- email: email: staff@example.com
+- email: staff@example.com
 - pass: password
 
 ## API documentation
